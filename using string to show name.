@@ -1,0 +1,8 @@
+import java.util.*;
+
+public class ShowName{
+	public static void main(String[] args){
+	String name="achintya";
+	System.out.println("Hello "+name);
+	}
+}
