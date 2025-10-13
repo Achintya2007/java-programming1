@@ -1,0 +1,35 @@
+import java.util.*;
+
+
+class Person{
+    String Name;
+    int Age;
+    
+    Person(){
+       Name="unknown";
+       Age=0;
+    }
+    Person(String n , int a){
+        Name=n;
+        Age=a;
+    }
+    void display(){
+        System.out.println("Name="+Name);
+        System.out.println("Age="+Age);
+    }
+}
+
+
+
+class Main {
+    public static void main(String[] args) {
+       
+        Person p1=new Person();
+        p1.display();
+        
+        Person p2=new Person("Achintyakumar",19);
+        p2.display();
+        
+    } 
+      
+}
