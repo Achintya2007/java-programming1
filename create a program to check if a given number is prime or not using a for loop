@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        int divisor=2;
+        Scanner obj=new Scanner(System.in);
+        int number=obj.nextInt();
+        boolean prime=true;
+        if(number<2){
+            System.out.println("it is not a prime:");
+        }
+        else{
+            while(divisor<=number/2){
+                if(number%divisor==0){
+                    prime=false;
+                    break;
+                }
+                divisor++;
+            }
+        }
+        if(prime){
+            System.out.println("it is a prime number:");
+        }
+        else{
+            System.out.println("it is not a prime number:");
+        }
+        
+    }
+}
